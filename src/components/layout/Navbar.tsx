@@ -45,7 +45,7 @@ const Navbar = () => {
           to="/"
           className="font-display text-2xl font-bold text-primary tracking-wider"
         >
-          KNOXS
+          KNOXS Photographer
         </Link>
 
         {/* Desktop Navigation */}
