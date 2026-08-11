@@ -113,7 +113,7 @@ const Auth = () => {
             title: "Account Created!",
             description: "Welcome! You can now access your account.",
           });
-          navigate("/admin");
+          navigate(nextPath ?? "/admin");
         }
       } else {
         const { error } = await signIn(formData.email, formData.password);
@@ -128,7 +128,7 @@ const Auth = () => {
             title: "Welcome Back!",
             description: "You have successfully signed in.",
           });
-          navigate("/admin");
+          navigate(nextPath ?? "/admin");
         }
       }
     } finally {
